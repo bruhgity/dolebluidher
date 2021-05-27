@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoleBluidher</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="topmsg">
+        <h1>money: <span id="harrison">0</span></h1>
+        <span id="error">DoleBluidher v 0.1 by <a href="https://github.com/bruhgity">brugs</a></span>
+        <h1>rats: <span id="billy">0</span></h1>
+    </div>
+    <div id="upgrades">
+        <img src="img/upgrade.png" onclick="clickpower()" id="upgrademan"></img>
+        <h2>Cost: <span id="clickpowerprice">50</span></h2>
+        <img src="img/rat.png" onclick="rat()" id="ratman"></img>
+        <h2>Cost: <span id="ratprice">20</span></h2>
+        
+    </div>
+    <img src="img/tradie.png" onclick="money()" id="tradie"></img>
+    
+</body>
+</html>
+
+<style>
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%,  rgb(76, 0, 255) 100%);
+    color: papayawhip;
+}
+
+#upgrades {
+    float: right;
+}
+
+#upgrademan {
+    width: 200px;
+    height: 200px;
+}
+
+#topmsg {
+    display: inline-block;
+}
+
+#tradie {
+    float: left;
+}
+
+#ratman {
+    width: 200px;
+    height: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: papayawhip;
+}
+
+
+
+
+
+
+</style>
