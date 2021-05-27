@@ -9,18 +9,26 @@
     <script src="main.js"></script>
 </head>
 <body>
+
     <div id="topmsg">
         <h1>money: <span id="harrison">0</span></h1>
-        <span id="error">DoleBluidher v 0.1 by <a href="https://github.com/bruhgity">brugs</a></span>
-        <h1>rats: <span id="billy">0</span></h1>
+        <span id="error">DoleBluidher v 0.1.1 by <a href="https://github.com/bruhgity">brugs</a></span>
+        <h1>rats: <span id="ambrose">0</span></h1>
+        <h1>finnleys: <span id="finnley">0</span></h1>
     </div>
+
     <div id="upgrades">
         <img src="img/upgrade.png" onclick="clickpower()" id="upgrademan"></img>
-        <h2>Cost: <span id="clickpowerprice">50</span></h2>
+        <h2>^ Cost: <span id="clickpowerprice">50</span></h2>
+
         <img src="img/rat.png" onclick="rat()" id="ratman"></img>
-        <h2>Cost: <span id="ratprice">20</span></h2>
+        <h2>^ Cost: <span id="ratprice">20</span></h2>
+
+        <img src="img/finnley.png" onclick="finnley()" id="finnman"></img>
+        <h2>^ Cost: <span id="finnleyprice">100</span></h2>
         
     </div>
+
     <img src="img/tradie.png" onclick="money()" id="tradie"></img>
     
 </body>
@@ -33,11 +41,16 @@ body {
     color: papayawhip;
 }
 
+a {
+    text-decoration: none;
+    color: papayawhip;
+}
+
 #upgrades {
     float: right;
 }
 
-#upgrademan {
+#upgrademan, #ratman, #finnman {
     width: 200px;
     height: 200px;
 }
@@ -50,15 +63,9 @@ body {
     float: left;
 }
 
-#ratman {
-    width: 200px;
-    height: 200px;
-}
 
-a {
-    text-decoration: none;
-    color: papayawhip;
-}
+
+
 
 
 
