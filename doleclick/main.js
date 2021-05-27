@@ -14,7 +14,7 @@ function money() {
 }
 
 function clickpower() {
-    if (data.money > upgrade.clickpowerprice) {
+    if (data.money >= upgrade.clickpowerprice) {
         data.money = data.money - upgrade.clickpowerprice;
         upgrade.clickpower = upgrade.clickpower + 5;
         upgrade.clickpowerprice = upgrade.clickpowerprice * 2;
@@ -26,7 +26,7 @@ function clickpower() {
 }
 
 function rat() {
-    if (data.money > upgrade.ratprice) {
+    if (data.money >= upgrade.ratprice) {
         data.money = data.money - upgrade.ratprice;
         upgrade.rat = upgrade.rat + 1
         upgrade.ratprice = upgrade.ratprice * 1.5;
