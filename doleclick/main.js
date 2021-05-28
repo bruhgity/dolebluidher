@@ -7,7 +7,7 @@ var data = {
 
 var upgrade = {
     clickpower: 1,
-    clickpowerprice: 50,
+    clickpowerprice: 15,
     rat: 0,
     ratprice: 20,
     finnley: 0,
@@ -36,11 +36,11 @@ function finnleymoney() {
 function clickpower() {
     if (data.money >= upgrade.clickpowerprice) {
         data.money = data.money - upgrade.clickpowerprice;
-        upgrade.clickpower = upgrade.clickpower + 5;
+        upgrade.clickpower = upgrade.clickpower + 1;
         upgrade.clickpowerprice = upgrade.clickpowerprice * 2;
         document.getElementById("clickpowerprice").innerHTML = upgrade.clickpowerprice;
     } else {
-        document.getElementById("error").innerText = "You need " + upgrade.clickpowerprice;
+        document.getElementById("error").innerText = "maaaate your gunnna need " + upgrade.clickpowerprice + " fora packa ice mate";
     }
     document.getElementById("harrison").innerHTML = prettify(data.money);
 }
@@ -53,7 +53,7 @@ function rat() {
         document.getElementById("ambrose").innerHTML = upgrade.rat;
         document.getElementById("ratprice").innerHTML = prettify(upgrade.ratprice);
     } else {
-        document.getElementById("error").innerText = "You need " + prettify(upgrade.ratprice);
+        document.getElementById("error").innerText = "squeak squeak cunt gimme " + prettify(upgrade.ratprice) + " ya ranga";
     }
     document.getElementById("harrison").innerHTML = prettify(data.money);
 }
