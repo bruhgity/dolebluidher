@@ -45,6 +45,7 @@ function clickpower() {
         data.money = data.money - upgrade.clickpowerprice;
         upgrade.clickpower = upgrade.clickpower + 1;
         upgrade.clickpowerprice = upgrade.clickpowerprice * 2;
+        document.getElementById("clickpower").innerHTML = upgrade.clickpower;
         document.getElementById("clickpowerprice").innerHTML = upgrade.clickpowerprice;
     } else {
         document.getElementById("error").innerText = "maaaate your gunnna need $" + upgrade.clickpowerprice + " fora packa ice mate";
