@@ -15,17 +15,21 @@
         <span id="error">DoleBluidher v 0.1.1 by <a href="https://github.com/bruhgity">brugs</a></span>
         <h1>rats: <span id="ambrose">0</span></h1>
         <h1>finnleys: <span id="finnley">0</span></h1>
+        <h1>bulldozers: <span id="bulldozer">0</span></h1>
     </div>
 
     <div id="upgrades">
         <img src="img/upgrade.png" onclick="clickpower()" id="upgrademan"></img>
-        <h2>^ Cost: <span id="clickpowerprice">15</span></h2>
+        <h2>Cost: <span id="clickpowerprice">100</span></h2>
 
         <img src="img/rat.png" onclick="rat()" id="ratman"></img>
-        <h2>^ Cost: <span id="ratprice">20</span></h2>
+        <h2>Cost: <span id="ratprice">20</span></h2>
 
         <img src="img/finnley.png" onclick="finnley()" id="finnman"></img>
-        <h2>^ Cost: <span id="finnleyprice">100</span></h2>
+        <h2>Cost: <span id="finnleyprice">200</span></h2>
+
+        <img src="img/bulldozer.png" onclick="bulldzoer()" id="bullman"></img>
+        <h2>Cost: <span id="bulldozerprice">600</span></h2>
         
     </div>
 
@@ -35,9 +39,10 @@
 </html>
 
 <style>
+
+
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%,  rgb(76, 0, 255) 100%);
+    background-image: url("img/background.jpg");
     color: papayawhip;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -56,9 +61,9 @@ a:hover {
     float: right;
 }
 
-#upgrademan, #ratman, #finnman {
-    width: 200px;
-    height: 200px;
+#upgrademan, #ratman, #finnman, #bullman{
+    width: 140px;
+    height: 140px;
 }
 
 #topmsg {
@@ -67,6 +72,9 @@ a:hover {
 
 #tradie {
     float: left;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 
 
