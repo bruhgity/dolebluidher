@@ -80,7 +80,7 @@ function finnley() {
 }
 
 function bulldozer() {
-    if (data.money >= upgrate.bulldozerprice) {
+    if (data.money >= upgrade.bulldozerprice) {
         data.money = data.money - upgrade.bulldozerprice;
         upgrade.bulldozer = upgrade.bulldozer + 1;
         upgrade.bulldozerprice = upgrade.bulldozerprice * 1.5;
