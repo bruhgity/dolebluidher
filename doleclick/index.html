@@ -9,11 +9,10 @@
     <script src="main.js"></script>
 </head>
 <body>
-<h1>oi maaaaate les get sum cash ay</h1>
     <div id="topmsg">
         <h1>money: <span id="harrison">0</span></h1>
         <h1>clickpower: <span id="clickpower">1</span></h1>
-        <span id="error">DoleBluidher v 0.1.1 by <a href="https://github.com/bruhgity">brugs</a></span>
+        <span id="error">DoleBluidher v 1.3.3 by <a href="https://github.com/bruhgity">brugs</a></span>
         <h1>rats: <span id="ambrose">0</span></h1>
         <h1>finnleys: <span id="finnley">0</span></h1>
         <h1>bulldozers: <span id="bulldozer">0</span></h1>
@@ -27,14 +26,17 @@
         <h2>Cost: <span id="ratprice">20</span></h2>
 
         <img src="img/finnley.png" onclick="finnley()" id="finnman"></img>
-        <h2>Cost: <span id="finnleyprice">200</span></h2>
+        <h2>Cost: <span id="finnleyprice">100</span></h2>
 
         <img src="img/bulldozer.png" onclick="bulldozer()" id="bullman"></img>
-        <h2>Cost: <span id="bulldozerprice">600</span></h2>
+        <h2>Cost: <span id="bulldozerprice">500</span></h2>
         
     </div>
-
-    <img src="img/tradie.png" onclick="money()" id="tradie"></img>
+    <div class="caption">
+        <img src="img/tradie.png" onclick="money()" id="tradie" alt="sometext"></img>
+        <p>oi maaaaate les get sum cash ay</p>
+    </div>
+    
     
 </body>
 </html>
@@ -45,17 +47,17 @@
 body {
     background-image: url("img/background.jpg");
     color: papayawhip;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
     text-decoration: none;
     color: papayawhip;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
 }
 
 a:hover {
@@ -81,9 +83,15 @@ a:hover {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
-
+.caption {
+    float: left;
+    text-align: justify;
+    width: 250px;
+}
 
 
 

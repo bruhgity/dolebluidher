@@ -11,9 +11,9 @@ var upgrade = {
     rat: 0,
     ratprice: 20,
     finnley: 0,
-    finnleyprice: 200,
+    finnleyprice: 100,
     bulldozer: 0,
-    bulldozerprice: 600,
+    bulldozerprice: 500,
 }
 
 // MONEY FUNCTIONS 
@@ -29,12 +29,12 @@ function ratmoney() {
 }
 
 function finnleymoney() {
-    data.money = data.money + 2 * upgrade.finnley;
+    data.money = data.money + 3 * upgrade.finnley;
     document.getElementById("harrison").innerHTML = prettify(data.money)
 }
 
 function bulldozermoney() {
-    data.money = data.money + 4 * upgrade.bulldozer;
+    data.money = data.money + 10 * upgrade.bulldozer;
     document.getElementById("harrison").innerHTML = prettify(data.money)
 }
 
@@ -70,7 +70,7 @@ function finnley() {
     if (data.money >= upgrade.finnleyprice) {
         data.money = data.money - upgrade.finnleyprice;
         upgrade.finnley = upgrade.finnley + 1;
-        upgrade.finnleyprice = upgrade.finnleyprice * 2;
+        upgrade.finnleyprice = upgrade.finnleyprice * 1.2;
         document.getElementById("finnley").innerHTML = upgrade.finnley;
         document.getElementById("finnleyprice").innerHTML = upgrade.finnleyprice;
     } else {
@@ -83,7 +83,7 @@ function bulldozer() {
     if (data.money >= upgrade.bulldozerprice) {
         data.money = data.money - upgrade.bulldozerprice;
         upgrade.bulldozer = upgrade.bulldozer + 1;
-        upgrade.bulldozerprice = upgrade.bulldozerprice * 1.5;
+        upgrade.bulldozerprice = upgrade.bulldozerprice * 1.2;
         document.getElementById("bulldozer").innerHTML = upgrade.bulldozer;
         document.getElementById("bulldozerprice").innerHTML = upgrade.bulldozerprice;
     } else {
@@ -95,7 +95,8 @@ function bulldozer() {
 // INTERVALS
 
 setInterval(ratmoney,1000)
-setInterval(finnleymoney,1500)
+setInterval(finnleymoney,1000)
+setInterval(bulldozermoney,1000)
 
 // OTHER FUNCTIONS
 
