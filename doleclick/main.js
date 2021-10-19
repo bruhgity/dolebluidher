@@ -57,7 +57,7 @@ function rat() {
     if (data.money >= upgrade.ratprice) {
         data.money = data.money - upgrade.ratprice;
         upgrade.rat = upgrade.rat + 1;
-        upgrade.ratprice = upgrade.ratprice * 1.5;
+        upgrade.ratprice = upgrade.ratprice * 1.2;
         document.getElementById("ambrose").innerHTML = upgrade.rat;
         document.getElementById("ratprice").innerHTML = prettify(upgrade.ratprice);
     } else {
@@ -72,7 +72,7 @@ function finnley() {
         upgrade.finnley = upgrade.finnley + 1;
         upgrade.finnleyprice = upgrade.finnleyprice * 1.2;
         document.getElementById("finnley").innerHTML = upgrade.finnley;
-        document.getElementById("finnleyprice").innerHTML = upgrade.finnleyprice;
+        document.getElementById("finnleyprice").innerHTML = prettify(upgrade.finnleyprice);
     } else {
         document.getElementById("error").innerText = "i need atleast " + upgrade.finnleyprice + " bucks until i work for u ba"
     }
@@ -85,7 +85,7 @@ function bulldozer() {
         upgrade.bulldozer = upgrade.bulldozer + 1;
         upgrade.bulldozerprice = upgrade.bulldozerprice * 1.2;
         document.getElementById("bulldozer").innerHTML = upgrade.bulldozer;
-        document.getElementById("bulldozerprice").innerHTML = upgrade.bulldozerprice;
+        document.getElementById("bulldozerprice").innerHTML = prettify(upgrade.bulldozerprice);
     } else {
         document.getElementById("error").innerText = "honk honk mate i need " + upgrade.bulldozerprice + " for gas bah im runnin on fumes"
     }
@@ -101,7 +101,7 @@ setInterval(bulldozermoney,1000)
 // OTHER FUNCTIONS
 
 function prettify(input){
-    var output = Math.round(input)
+    var output = Math.trunc(input)
     return output;
 }
 
