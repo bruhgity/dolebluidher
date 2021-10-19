@@ -48,7 +48,7 @@ function clickpower() {
         document.getElementById("clickpower").innerHTML = upgrade.clickpower;
         document.getElementById("clickpowerprice").innerHTML = upgrade.clickpowerprice;
     } else {
-        document.getElementById("error").innerText = "maaaate your gunnna need $" + upgrade.clickpowerprice + " fora packa ice mate";
+        document.getElementById("error").innerText = "maaaate your gunnna need $" + prettify(upgrade.clickpowerprice) + " fora packa ice mate";
     }
     document.getElementById("harrison").innerHTML = prettify(data.money);
 }
@@ -74,7 +74,7 @@ function finnley() {
         document.getElementById("finnley").innerHTML = upgrade.finnley;
         document.getElementById("finnleyprice").innerHTML = prettify(upgrade.finnleyprice);
     } else {
-        document.getElementById("error").innerText = "i need atleast " + upgrade.finnleyprice + " bucks until i work for u ba"
+        document.getElementById("error").innerText = "i need atleast " + prettify(upgrade.finnleyprice) + " bucks until i work for u ba"
     }
     document.getElementById("harrison").innerHTML = prettify(data.money);
 }
@@ -87,7 +87,7 @@ function bulldozer() {
         document.getElementById("bulldozer").innerHTML = upgrade.bulldozer;
         document.getElementById("bulldozerprice").innerHTML = prettify(upgrade.bulldozerprice);
     } else {
-        document.getElementById("error").innerText = "honk honk mate i need " + upgrade.bulldozerprice + " for gas bah im runnin on fumes"
+        document.getElementById("error").innerText = "honk honk mate i need " + prettify(upgrade.bulldozerprice) + " for gas bah im runnin on fumes"
     }
     document.getElementById("harrison").innerHTML = prettify(data.money);
 }
